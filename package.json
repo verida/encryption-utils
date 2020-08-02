@@ -1,0 +1,25 @@
+{
+  "name": "@verida/encryption-utils",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verida/encryption-utils.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/verida/encryption-utils/issues"
+  },
+  "homepage": "https://github.com/verida/encryption-utils#readme",
+  "dependencies": {
+    "link": "^0.1.5",
+    "npm": "^6.14.7",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  }
+}
