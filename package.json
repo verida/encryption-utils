@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel src -d dist"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
     "@babel/core": "^7.11.0",
     "@babel/node": "^7.10.5",
     "@babel/polyfill": "^7.10.4",
-    "@babel/preset-env": "^7.11.0"
+    "@babel/preset-env": "^7.11.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   }
 }
