@@ -85,7 +85,7 @@ export const randomKey = function(length) {
     return newKey(length);
 }
 
-export const sign = function(data, privateKeyBytes) {
+export const signData = function(data, privateKeyBytes) {
     let messageUint8 = decodeUTF8(JSON.stringify(data));
     return encodeBase64(sign.detached(messageUint8, privateKeyBytes));
 }
