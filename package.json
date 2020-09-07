@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build:es5": "rm-rf ./dist; tsc",
+    "build": "npm run build:es5",
     "prepublishOnly": "npm run build"
   },
   "repository": {
