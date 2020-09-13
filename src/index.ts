@@ -83,8 +83,16 @@ export default class EncryptionUtils {
         return JSON.parse(base64DecryptedMessage);
     }
 
+    static sharedKey(publicKeyBytes: Uint8Array, privateKeyBytes: Uint8Array) {
+        return box.before(publicKeyBytes, privateKeyBytes)
+    }
+
     static randomKey(length: number) {
         return newKey(length);
+    }
+
+    static randomKeyPair() {
+        return box.keyPair()
     }
 
     static signData(data: any, privateKeyBytes: Uint8Array) {
@@ -95,5 +103,13 @@ export default class EncryptionUtils {
     static verifySig(data: any, sig: string, publicKeyBytes: Uint8Array) {
         let messageUint8 = decodeUTF8(JSON.stringify(data));
         return sign.detached.verify(messageUint8, decodeBase64(sig), publicKeyBytes);
+    }
+
+    static decodeBase64(data: any) {
+        return decodeBase64(data)
+    }
+
+    static encodeBase64(data: any) {
+        return encodeBase64(data)
     }
 }
