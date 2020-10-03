@@ -1,6 +1,6 @@
 {
   "name": "@verida/encryption-utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -19,8 +19,6 @@
   },
   "homepage": "https://github.com/verida/encryption-utils#readme",
   "dependencies": {
-    "link": "^0.1.5",
-    "npm": "^6.14.7",
     "tweetnacl": "^1.0.3",
     "tweetnacl-util": "^0.15.1"
   },
